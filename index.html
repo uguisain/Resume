@@ -1,30 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-TW">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>我的履歷</title>
-    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-    
-    </head>
-<body class="bg-gray-100 p-8">
-
-    <h1 class="text-3xl font-bold underline text-blue-600 mb-4">
-        Hello world!
-    </h1>
-
-    <div class="mb-4">
-        <img src="assets/unnamed.png" class="w-32 h-auto rounded-full shadow-lg" alt="大頭照" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-gray-100 p-8">
+    <!-- ***************************************************************** -->
+    <!-- 開頭 -->
+    <div
+      class="max-w-[1000px] mx-auto px-4 md:px-8 py-4 md:py-4 shadow-lg bg-[#FFFDF6]"
+    >
+      <div class="flex items-end">
+        <!-- 大頭照 -->
+        <div class="mr-6">
+          <img
+            src="assets/unnamed.png"
+            class="w-25 h-auto rounded-full shadow-lg"
+            alt="大頭照"
+          />
+        </div>
+        <!-- 名字 -->
+        <div class="mb-2">
+          <h2 class="text-[30px] tracking-wider font-black text-[#739451]">
+            呂佩凌
+          </h2>
+          <h3 class="text-[20px] uppercase tracking-wider font-bold text-[#A0C878] ml-1">
+            Pei-Ling, Lu
+          </h3>
+        </div>
+        <!-- 聯絡方式 -->
+        <div
+          class="ml-auto border-l-2 border-gray-200 pl-5 text-slate-700 text-sm space-y-1"
+        >
+          <!-- 電話 -->
+          <div class="flex items-center">
+            <span class="w-5 text-center mr-2">📞</span>
+            <a
+              href="tel:#"
+              class="underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+              >0958-712-619</a
+            >
+          </div>
+          <!-- line -->
+          <div class="flex items-center">
+            <img
+              src="assets/line.png"
+              class="w-5 h-5 object-contain mr-2"
+              alt="line"
+            />
+            <a
+              href="tel:#"
+              class="underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+              >lukiya678</a
+            >
+          </div>
+          <!-- github -->
+          <div class="flex items-center">
+            <img
+              src="assets/github.png"
+              class="w-5 h-5 object-contain mr-2"
+              alt="github"
+            />
+            <a
+              href="https://github.com/uguisain"
+              class="underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+              >uguisain</a
+            >
+          </div>
+          <!-- 信箱 -->
+          <div class="flex items-center">
+            <span class="w-5 text-center mr-2">📧</span>
+            <a
+              href="mailto:minsha678@gmail.com"
+              class="underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+              >minsha678@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- 技能 -->
+    <div
+      class="max-w-[1000px] mx-auto px-4 md:px-8 py-4 md:py-4 shadow-lg bg-[#FFFDF6]"
+    >
+      <h1 class="text-2xl font-extrabold mb-4">技術能力</h1>
 
-    <p class="text-lg">測試內容（受 style.css 影響）</p>
+      <div class="flex justify-between gap-6">
+        <div class="w-[32%]">
+          <div class="border-t-2 border-gray-400 pt-4">
+            <h2 class="text-xl font-bold mb-4">Front-end</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
+              <li>Angular（基礎開發、資料繫結、條件渲染）</li>
+              <li>API 串接（HTTP Client）</li>
+              <li>RWD 版面實作（Bootstrap、Tailwind）</li>
+              <li>PrimeNG 套件整合</li>
+            </ul>
+          </div>
+        </div>
 
-    <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
-        這是一個 Tailwind 按鈕
-    </button>
+        <div class="w-[32%]">
+          <div class="border-t-2 border-gray-400 pt-4">
+            <h2 class="text-xl font-bold mb-4">Back-end</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
+              <li>Java（基礎 API 開發）</li>
+              <li>RESTful API 設計基礎</li>
+              <li>MySQL（基本 CRUD 操作）</li>
+            </ul>
+          </div>
+        </div>
 
-</body>
+        <div class="w-[32%]">
+          <div class="border-t-2 border-gray-400 pt-4">
+            <h2 class="text-xl font-bold mb-4">Tools</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
+              <li>Git / GitHub（團隊協作、版本控制）</li>
+              <li>Postman（API 測試）</li>
+              <li>Eclipse / VS Code</li>
+              <li>Docker（基礎理解）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 尾端 -->
+    <!-- ***************************************************************** -->
+  </body>
 </html>
