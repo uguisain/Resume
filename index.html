@@ -18,7 +18,7 @@
     <div
       class="max-w-[1000px] mx-auto px-4 md:px-8 py-4 md:py-4 shadow-lg bg-[#FFFDF6]"
     >
-      <div class="flex items-end">
+      <div class="flex items-end mt-2">
         <!-- 大頭照 -->
         <div class="mr-6">
           <img
@@ -32,7 +32,9 @@
           <h2 class="text-[30px] tracking-wider font-black text-[#739451]">
             呂佩凌
           </h2>
-          <h3 class="text-[20px] uppercase tracking-wider font-bold text-[#A0C878] ml-1">
+          <h3
+            class="text-[20px] uppercase tracking-wider font-bold text-[#A0C878] ml-1"
+          >
             Pei-Ling, Lu
           </h3>
         </div>
@@ -97,8 +99,10 @@
         <div class="w-[32%]">
           <div class="border-t-2 border-gray-400 pt-4">
             <h2 class="text-xl font-bold mb-4">Front-end</h2>
-            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
-              <li>Angular（基礎開發、資料繫結、條件渲染）</li>
+            <ul
+              class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold"
+            >
+              <li>Angular（Component 開發、資料繫結、條件渲染）</li>
               <li>API 串接（HTTP Client）</li>
               <li>RWD 版面實作（Bootstrap、Tailwind）</li>
               <li>PrimeNG 套件整合</li>
@@ -109,24 +113,162 @@
         <div class="w-[32%]">
           <div class="border-t-2 border-gray-400 pt-4">
             <h2 class="text-xl font-bold mb-4">Back-end</h2>
-            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
+            <ul
+              class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold"
+            >
               <li>Java（基礎 API 開發）</li>
-              <li>RESTful API 設計基礎</li>
+              <li>RESTful API 基礎實作</li>
               <li>MySQL（基本 CRUD 操作）</li>
             </ul>
           </div>
         </div>
 
         <div class="w-[32%]">
-          <div class="border-t-2 border-gray-400 pt-4">
-            <h2 class="text-xl font-bold mb-4">Tools</h2>
-            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm font-semibold">
+          <div class="border-t-2 border-gray-300 pt-4">
+            <h2 class="text-lg font-bold mb-4 text-gray-500">Tools</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700 text-sm">
               <li>Git / GitHub（團隊協作、版本控制）</li>
               <li>Postman（API 測試）</li>
               <li>Eclipse / VS Code</li>
-              <li>Docker（基礎理解）</li>
+              <li>Docker（基本概念）</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================= -->
+    <div
+      class="max-w-[1000px] mx-auto px-4 md:px-8 py-4 md:py-4 shadow-lg bg-[#FFFDF6]"
+    >
+      <h1 class="text-2xl font-extrabold mb-4">專題作品</h1>
+      <div class="flex justify-between border-t-2 border-gray-400">
+        <!-- 團體專題 -->
+        <div class="mt-4">
+          <!-- 描述 -->
+          <div class="flex justify-between items-end">
+            <div class="flex items-end">
+              <h2 class="text-xl font-bold">團購平台（團隊專案｜前端開發）</h2>
+              <span class="text-gray-400">2026.01 – 2026.03</span>
+            </div>
+            <div class="mr-3">
+              <a
+                href="https://github.com/Mickey11566/GogoBuy_FE"
+                class="text-sm text-gray-600 underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <p class="mt-1 text-gray-600 text-sm">
+            Angular / RESTful API / Git / Tailwind / PrimeNG
+          </p>
+          <p class="mt-2 text-gray-500">
+            參與開發團購平台系統，提供店家資訊瀏覽、團購活動建立與跟團點餐功能，前端使用
+            Angular，並透過 API 與後端系統進行資料交換。
+          </p>
+          <h3 class="text-lg font-bold mt-2">負責內容</h3>
+          <ul class="list-disc ml-5 font-medium">
+            <li>
+              負責「許願池」、「店家頁面」、「跟團點餐頁面」之前端功能開發與 API
+              串接
+            </li>
+            <li>
+              參與登入 / 註冊、使用者資訊與通知頁面的初期版型建立與基本邏輯處理
+            </li>
+            <li>實作許願池功能（新增、刪除、追蹤願望）並處理資料更新流程</li>
+            <li>建立店家資訊與團購活動資料展示頁面，整合多個 API 取得資料</li>
+            <li>實作跟團點餐流程，包含餐點加入訂單、訂單送出與訂單修改</li>
+            <li>
+              設計多項條件判斷與防呆機制，例如登入限制、操作條件檢查與按鈕狀態控制
+            </li>
+          </ul>
+          <h3 class="text-lg font-bold mt-2">技術與流程</h3>
+          <ul class="list-disc ml-5">
+            <li>使用 Angular 進行前端開發與 HTTP Client API 串接</li>
+            <li>使用 Postman / Swagger 確認 API 規格與回傳資料格式</li>
+            <li>依 API 回傳資料更新畫面狀態並進行資料渲染</li>
+            <li>
+              實作 loading、操作限制與錯誤處理機制，避免資料不同步或重複送出
+            </li>
+            <li>
+              使用 Git / GitHub 進行分支開發與版本管理，並與團隊協作處理衝突
+            </li>
+            <li>與後端協作確認 API 回傳資料格式與欄位內容</li>
+          </ul>
+          <h3 class="text-lg font-bold mt-2">RWD 與 UI</h3>
+          <ul class="list-disc ml-5">
+            <li>調整卡片排版與欄位配置以支援不同裝置尺寸</li>
+            <li>針對手機版調整字體大小、版面配置與顯示內容</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <!-- 圖片 -->
+          <img src="assets/2026-03-04 154614.png" class="max-w-[300px] rounded-lg shadow-md"/>
+        </div>
+      </div>
+      <!-- 個人專題 -->
+      <div
+        class="flex justify-between border-t-2 border-dashed border-gray-300 mt-2"
+      >
+        <div class="mt-4">
+          <!-- 描述 -->
+          <div class="flex justify-between items-end">
+            <div class="flex items-end">
+              <h2 class="text-xl font-bold">動態問卷系統（個人專案｜全端練習）</h2>
+              <span class="text-gray-400">2025.10 – 2025.12</span>
+            </div>
+            <div class="mr-3">
+              <a
+                href="https://github.com/uguisain/Questionnaire-Form"
+                class="text-sm text-gray-600 underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2"
+                >Front-end</a
+              >
+            </div>
+          </div>
+          <div class="flex justify-between items-end">
+            <p class="mt-1 text-gray-600 text-sm">
+              Angular / Java / MySQL / RESTful API
+            </p>
+            <a
+              href="https://github.com/uguisain/quiz_1141013/tree/dev"
+              class="text-sm text-gray-600 underline decoration-1 underline-offset-1 transition-all hover:text-[#A0C878] hover:decoration-2 mr-3"
+              >Back-end</a
+            >
+          </div>
+          <p class="mt-2 text-gray-500">
+            開發一套動態問卷系統，提供問卷建立、題目編輯、問卷填寫與結果統計等功能，前端使用
+            Angular，後端以 Java 建立 RESTful API，並透過 MySQL
+            儲存問卷與填答資料。
+          </p>
+          <h3 class="text-lg font-bold mt-2">主要實作內容</h3>
+          <ul class="list-disc ml-5 font-medium">
+            <li>建立問卷列表頁，提供問卷搜尋、狀態篩選與刪除功能</li>
+            <li>開發問卷填寫頁，依問卷 id 取得題目資料並動態渲染表單</li>
+            <li>
+              實作問卷編輯功能，支援新增 / 刪除題目與選項，並維持題目與選項順序
+            </li>
+            <li>建立問卷統計頁，顯示填答結果與統計資訊</li>
+            <li>
+              使用 Angular Router 與 route parameter 控制頁面導向與資料取得
+            </li>
+            <li>使用 forkJoin 同時取得多個 API 資料並更新畫面狀態</li>
+          </ul>
+          <h3 class="text-lg font-bold mt-2">後端 API</h3>
+          <ul class="list-disc ml-5">
+            <li>
+              使用 Java 建立 RESTful API，提供問卷、題目與填答資料的 CRUD 操作
+            </li>
+            <li>設計問卷、題目與回答資料模型並與 MySQL 資料庫整合</li>
+          </ul>
+          <h3 class="text-lg font-bold mt-2">開發流程</h3>
+          <ul class="list-disc ml-5">
+            <li>使用 Postman 測試 API 並確認回傳資料格式</li>
+            <li>前端依 API 回傳資料更新畫面狀態與表單內容</li>
+            <li>實作 loading 與基本驗證，避免未登入或資料不完整時送出請求</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <!-- 圖片 -->
+          <img src="assets/2026-03-04 172536.png" class="max-w-[300px] rounded-lg shadow-md"/>
         </div>
       </div>
     </div>
