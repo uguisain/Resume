@@ -1,0 +1,16 @@
+@media print {
+  body {
+    background-color: white !important; /* 列印通常建議白底 */
+    padding: 0 !important;
+  }
+  .shadow-lg {
+    box-shadow: none !important; /* 陰影在 PDF 裡有時會髒髒的，建議拿掉 */
+  }
+  img {
+    break-inside: avoid; /* 防止圖片被切斷成兩頁 */
+  }
+  .Print {
+    width: 100% !important; /* 確保列印時撐滿 A4 */
+    max-width: none !important;
+  }
+}
